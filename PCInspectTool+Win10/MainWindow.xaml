@@ -1,0 +1,13 @@
+﻿<Window x:Class="PCInspectTool_Win10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PCInspectTool_Win10"
+        mc:Ignorable="d"
+        Title="내PC돌보미 점검도구 10" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="점검시작버튼" HorizontalAlignment="Left" Margin="546,150,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
