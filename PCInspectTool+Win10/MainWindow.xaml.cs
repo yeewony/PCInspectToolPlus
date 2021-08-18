@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace PCInspectTool_Win10
 {
@@ -10,6 +12,15 @@ namespace PCInspectTool_Win10
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void StartInspection(object sender, RoutedEventArgs e)
+        {
+            ThreadPool.QueueUserWorkItem(new WaitCallback((state) =>
+            {
+                Task.Run(() =>
+                );
+            }));
         }
     }
 }
