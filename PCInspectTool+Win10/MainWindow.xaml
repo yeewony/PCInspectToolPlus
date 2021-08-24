@@ -8,6 +8,8 @@
         Title="내PC돌보미 점검도구 10" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Button Content="점검시작버튼" HorizontalAlignment="Left" Margin="32,39,0,0" VerticalAlignment="Top" Width="75" Click="StartInspection"/>
+        <Label x:Name="lbtest1" Content="Label" HorizontalAlignment="Left" Margin="197,131,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbtest2" Content="Label" HorizontalAlignment="Left" Margin="197,197,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

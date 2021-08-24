@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Inslib\Inslib.csproj">
+      <Project>{94d148e0-b7a9-44e1-9f93-5c5e4b8fdb8b}</Project>
+      <Name>Inslib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XMLlib\XMLlib.csproj">
       <Project>{19725c30-e3d9-40cb-af9b-4df65943d180}</Project>
       <Name>XMLlib</Name>

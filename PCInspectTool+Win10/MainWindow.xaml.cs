@@ -1,4 +1,6 @@
-﻿using System.Threading;
+﻿using System;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -19,7 +21,19 @@ namespace PCInspectTool_Win10
             ThreadPool.QueueUserWorkItem(new WaitCallback((state) =>
             {
                 Task.Run(() =>
-                );
+                {
+                    foreach (var InsList in Inslib.Main.AutoCheck)
+                    {
+                        Console.WriteLine(InsList.InspectRun());
+                    }
+                }
+                ) ;
+
+                Inslib.Main.ManualCheck.AsParallel().ForAll(chk => 
+                {
+                    Console.WriteLine(chk.InspectRun());
+
+                });
             }));
         }
     }
