@@ -9,8 +9,9 @@ namespace Inslib
     {
         public string InspectRun()
         {
+            string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
 
-            return "수동 점검 항목 입니다.";
+            return username;
         }
     }
 }
