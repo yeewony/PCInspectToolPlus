@@ -35,9 +35,7 @@ namespace PCInspectTool_Splash
 
             ThreadPool.QueueUserWorkItem(_ =>
             {
-             string OS = OSVersionCheck.Run();
-
-                
+             string OS = OSVersionCheck.Run();               
 
                 Dispatcher.BeginInvoke(new Action(() =>
                 {

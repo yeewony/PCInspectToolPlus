@@ -8,6 +8,7 @@ namespace Inslib
     public interface IAuto
     {
         string InspectRun();
+
     }
     
     public interface IManual

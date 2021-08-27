@@ -40,6 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01_UserAccountPassword.cs" />
+    <Compile Include="02_AccountExpirationDate.cs" />
+    <Compile Include="03_AdministrativeShare.cs" />
+    <Compile Include="04_LogonAutorun.cs" />
+    <Compile Include="05_WinUpdateStatus.cs" />
+    <Compile Include="06_HncUpdateStatus.cs" />
+    <Compile Include="07_FlashPlayerStatus.cs" />
+    <Compile Include="08_AcrobatUpdateStatus.cs" />
+    <Compile Include="09_AntiVirusInstalled.cs" />
+    <Compile Include="10_AntiVirusStatus.cs" />
     <Compile Include="Interface.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
