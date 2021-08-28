@@ -5,7 +5,11 @@ using System.Text;
 
 namespace Inslib
 {
-    class _01_UserAccountPassword
+    class _01_UserAccountPassword : IAuto
     {
+        public string InspectRun()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _09_AntiVirusInstalled
+    class _09_AntiVirusInstalled : IAuto
     {
     }
 }

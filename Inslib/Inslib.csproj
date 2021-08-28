@@ -50,6 +50,13 @@
     <Compile Include="08_AcrobatUpdateStatus.cs" />
     <Compile Include="09_AntiVirusInstalled.cs" />
     <Compile Include="10_AntiVirusStatus.cs" />
+    <Compile Include="11_FirewallEnabled.cs" />
+    <Compile Include="12_ScreenSaverEnabled.cs" />
+    <Compile Include="13_AutoplayEnabled.cs" />
+    <Compile Include="14_UnusedActiveX.cs" />
+    <Compile Include="15_RemoteDesktop.cs" />
+    <Compile Include="16_RouterPassword.cs" />
+    <Compile Include="17_UnsignedProcess.cs" />
     <Compile Include="Interface.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

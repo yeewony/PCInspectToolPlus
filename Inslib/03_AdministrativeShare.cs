@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _03_AdministrativeShare
+    class _03_AdministrativeShare : IAuto
     {
     }
 }

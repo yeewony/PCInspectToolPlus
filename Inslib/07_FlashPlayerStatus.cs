@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _07_FlashPlayerStatus
+    class _07_FlashPlayerStatus : IManual
     {
     }
 }

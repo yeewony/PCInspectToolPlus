@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _05_WinUpdateStatus
+    class _05_WinUpdateStatus : IAuto
     {
     }
 }

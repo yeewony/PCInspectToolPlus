@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _06_HncUpdateStatus
+    class _06_HncUpdateStatus : IManual
     {
     }
 }

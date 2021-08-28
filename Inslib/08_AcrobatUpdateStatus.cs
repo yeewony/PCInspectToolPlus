@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _08_AcrobatUpdateStatus
+    class _08_AcrobatUpdateStatus : IManual
     {
     }
 }

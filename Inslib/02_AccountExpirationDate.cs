@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _02_AccountExpirationDate
+    class _02_AccountExpirationDate : IAuto
     {
     }
 }

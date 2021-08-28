@@ -7,12 +7,18 @@ namespace Inslib
 {
     public interface IAuto
     {
-        string InspectRun();
+        string test();
+
+        string check();
+
 
     }
     
     public interface IManual
     {
-        string InspectRun();
+        string test();
+
+        string check();
+
     }
 }

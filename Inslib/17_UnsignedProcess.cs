@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _10_AntiVirusStatus : IAuto
+    class _17_UnsignedProcess : IManual
     {
     }
 }

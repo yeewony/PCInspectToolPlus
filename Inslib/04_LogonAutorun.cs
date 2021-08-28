@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    class _04_LogonAutorun
+    class _04_LogonAutorun : IManual
     {
     }
 }
