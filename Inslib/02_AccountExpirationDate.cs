@@ -7,5 +7,19 @@ namespace Inslib
 {
     class _02_AccountExpirationDate : IAuto
     {
+        public static string InsName;
+        public string test()
+        {
+            InsName = this.GetType().Name;
+
+            return InsName;
+        }
+
+        public string check()
+        {
+
+
+            return InsName + "Load ok";
+        }
     }
 }

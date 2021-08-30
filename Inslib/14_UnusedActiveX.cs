@@ -7,5 +7,14 @@ namespace Inslib
 {
     class _14_UnusedActiveX : IAuto
     {
+        public string test()
+        {
+            return "winupdatestatus ok";
+        }
+
+        public string check()
+        {
+            return "check";
+        }
     }
 }

@@ -7,5 +7,14 @@ namespace Inslib
 {
     class _16_RouterPassword : IManual
     {
+        public string test()
+        {
+            return "winupdatestatus ok";
+        }
+
+        public string check()
+        {
+            return "check";
+        }
     }
 }

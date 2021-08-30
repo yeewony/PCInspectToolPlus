@@ -7,5 +7,14 @@ namespace Inslib
 {
     class _11_FirewallEnabled : IAuto
     {
+        public string test()
+        {
+            return "winupdatestatus ok";
+        }
+
+        public string check()
+        {
+            return "check";
+        }
     }
 }

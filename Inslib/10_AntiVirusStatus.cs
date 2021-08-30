@@ -7,5 +7,14 @@ namespace Inslib
 {
     class _10_AntiVirusStatus : IAuto
     {
+        public string test()
+        {
+            return "winupdatestatus ok";
+        }
+
+        public string check()
+        {
+            return "check";
+        }
     }
 }

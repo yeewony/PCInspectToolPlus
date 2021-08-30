@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inslib
 {
-    public class testclass : IManual
+    public class testclass
     {
         public string InspectRun()
         {

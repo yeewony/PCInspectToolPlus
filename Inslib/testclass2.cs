@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Inslib
 {
-    public class testclass2 : IAuto
+    public class testclass2
     {
         public string InspectRun()
         {
