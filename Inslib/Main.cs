@@ -18,7 +18,8 @@ namespace Inslib
 
         public static List<IAuto> AutoCheck = new List<IAuto>()
         {
-            new _01_UserAccountPassword()
+            new _01_UserAccountPassword(),
+            new _02_AccountExpirationDate(),
         };
     }
 }

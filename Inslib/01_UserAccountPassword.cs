@@ -18,24 +18,6 @@ namespace Inslib
         //0=> 점검번호 1=>결과값, 2 = 기타값..
         public static string[] result = new string[3];
 
-
-        // Or use `FindByIdentity` if you want to manually specify a user.
-        // UserPrincipal.FindByIdentity( ctx, IdentityType.Sid, <YourSidHere> );
-
-        //PasswordNotRequired = True => 패스워드 없이 로그인 가능한 계정이라는 말임.
-        //AccountExpirationDate	은 패스워드 유효기간을 말하는것 같음
-
-        //PrincipalContext context = new PrincipalContext(ContextType.Domain);
-
-        //UserPrincipal p = UserPrincipal.FindByIdentity(context, "Domain\\User Name");
-
-        //if (p.AccountExpirationDate.HasValue)
-        //{
-        //    DateTime expiration = p.AccountExpirationDate.Value.ToLocalTime();
-        //}
-        //의미하기로는 패스워드 기간에 대한 문제를 의미하는것 같음.
-
-
         public string test()
         {
 
@@ -44,26 +26,22 @@ namespace Inslib
 
         public string check()
         {
-            //UserPrincipal user = UserPrincipal.Current;
-
-            //if (user!=null)
-            //{
-            //    Console.WriteLine("계정이 암호를 사용하고 있습니까? {0}", !user.PasswordNotRequired);
-            //    result[2] = user.PasswordNotRequired.ToString();
-            //}
+            string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
 
             try
             {
                 using (var context = new PrincipalContext(ContextType.Machine))
                 {
-                    var user = UserPrincipal.FindByIdentity(context, Environment.UserName);
-                    user.SetPassword("");
-                    if (user.)
+                    var user = UserPrincipal.FindByIdentity(context, username);
+                    if (user==null)
                     {
-                        result[2] = "패스워드...?";
+                        //로컬 유저가 아님, 패스워드가 필요함.
+                        result[2] = "로컬 유저가 아닙니다.";
                     }
                     else
                     {
+                        //공백으로 패스워드를 변경해봄으로서 변경이 되면 패스워드가 설정된것이 아니다.
+                        user.ChangePassword("", "");
                         result[2] = "패스워드를 설정하십시오.";
                     }
 

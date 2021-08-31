@@ -9,7 +9,7 @@
     <Grid x:Name="xgrid">
         <Button Content="점검시작버튼" HorizontalAlignment="Left" Margin="32,39,0,0" VerticalAlignment="Top" Width="75" Click="StartInspection"/>
         <Label x:Name="lb_PC01" Content="01 로그인 패스워드 설정" HorizontalAlignment="Left" Margin="60,185,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="_02_AccountExpirationDate" Content="02 로그인 패스워드 주기적 변경" HorizontalAlignment="Left" Margin="60,216,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lb_PC02" Content="02 로그인 패스워드 주기적 변경" HorizontalAlignment="Left" Margin="60,216,0,0" VerticalAlignment="Top"/>
         <Label x:Name="_03_AdministrativeShare" Content="03 공유폴더 제거" HorizontalAlignment="Left" Margin="60,242,0,0" VerticalAlignment="Top"/>
         <Label x:Name="_04_LogonAutorun" Content="04 윈도우 시작 서비스" HorizontalAlignment="Left" Margin="60,268,0,0" VerticalAlignment="Top"/>
         <Label x:Name="_05_WinUpdateStatus" Content="05 최신보안 업데이트" HorizontalAlignment="Left" Margin="60,294,0,0" VerticalAlignment="Top"/>
