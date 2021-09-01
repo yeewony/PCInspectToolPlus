@@ -15,7 +15,6 @@ namespace Inslib
         /// </summary>
         /// 
         public static string InsName = "PC02";
-        public static string Winver = "";
         //0=> 점검번호 1=>결과값, 2 = 기타값..
         public static string[] result = new string[3];
 
@@ -27,36 +26,19 @@ namespace Inslib
 
         public string check()
         {
-            string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-
             try
             {
-                //using (var context = new PrincipalContext(ContextType.Machine))
-                //{
-                //    var user = UserPrincipal.FindByIdentity(context, username);
-                //    if (user == null)
-                //    {
-                //        로컬 유저가 아님, 패스워드가 필요함.
-                //        result[2] = "로컬 유저가 아닙니다.";
-                //    }
-                //    else
-                //    {
-                //        공백으로 패스워드를 변경해봄으로서 변경이 되면 패스워드가 설정된것이 아니다.
 
-
-                //        result[2] = "패스워드를 설정하십시오.";
-                //    }
-
-                //    return result[2];
-                //}
-
-                using (var userEntry = new DirectoryEntry("WinNT://"+Environment.MachineName+"/"+Environment.UserName))
+                using (var userEntry = new DirectoryEntry("WinNT://" + Environment.MachineName + "/" + Environment.UserName))
                 {
-                    DateTime r = (DateTime)userEntry.InvokeGet("PasswordExpirationDate");
+                    DateTime Exdate = (DateTime)userEntry.InvokeGet("PasswordExpirationDate");
 
-                    result[2] = r.ToString();
+                    Exdate = Exdate.AddDays(1);
+
+                    result[2] = (Exdate - DateTime.Now).Days.ToString();
 
                     return result[2];
+
                 }
 
             }
