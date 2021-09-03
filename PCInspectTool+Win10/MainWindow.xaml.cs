@@ -21,31 +21,32 @@ namespace PCInspectTool_Win10
         {
             ThreadPool.QueueUserWorkItem(new WaitCallback((state) =>
             {
-                Task.Run(() =>
+                foreach (var InsList in Inslib.Main.AutoCheck)
                 {
-                    foreach (var InsList in Inslib.Main.AutoCheck)
+                    Console.WriteLine(InsList.test());
+
+                    Dispatcher.BeginInvoke(new Action(() =>
                     {
-                        Console.WriteLine(InsList.test());
+                        string a = "lb_" + InsList.test();
 
-                        Dispatcher.BeginInvoke(new Action(() =>
-                        {
-                            string a = "lb_" + InsList.test();
+                        var SomeLabel = (Label)this.FindName(a);
 
-                            var SomeLabel = (Label)this.FindName(a);
-
-                            SomeLabel.Content = InsList.check();
-                        }
-                        ));
+                        SomeLabel.Content = InsList.check();
                     }
+                    ));
                 }
-                ) ;
 
-                Inslib.Main.ManualCheck.AsParallel().ForAll(chk => 
+                Parallel.ForEach(Inslib.Main.ManualCheck, chk =>
                 {
                     Console.WriteLine(chk.test());
+                });
+
+                //Inslib.Main.ManualCheck.AsParallel().ForAll(chk => 
+                //{
+                //    Console.WriteLine(chk.test());
                     
 
-                });
+                //});
             }));
         }
     }

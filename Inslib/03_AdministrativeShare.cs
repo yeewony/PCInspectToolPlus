@@ -7,7 +7,8 @@ namespace Inslib
 {
     class _03_AdministrativeShare : IAuto
     {
-        public static string InsName;
+        public static string InsName = "PC03";
+
         public string test()
         {
             InsName = this.GetType().Name;
