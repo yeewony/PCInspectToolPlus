@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inslib", "Inslib\Inslib.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestArea", "TestArea\TestArea.csproj", "{F42127D3-54E8-4612-9772-A199C7E47CBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecuCheck7", "SecuCheck7\SecuCheck7.csproj", "{3FFD7BDA-E17D-410E-AF6A-DDBA41651A80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F42127D3-54E8-4612-9772-A199C7E47CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F42127D3-54E8-4612-9772-A199C7E47CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F42127D3-54E8-4612-9772-A199C7E47CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FFD7BDA-E17D-410E-AF6A-DDBA41651A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FFD7BDA-E17D-410E-AF6A-DDBA41651A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FFD7BDA-E17D-410E-AF6A-DDBA41651A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FFD7BDA-E17D-410E-AF6A-DDBA41651A80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

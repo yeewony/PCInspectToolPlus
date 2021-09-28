@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.DirectoryServices;
+using System.DirectoryServices.AccountManagement;
 using System.Linq;
 using System.Text;
 
@@ -13,7 +14,7 @@ namespace TestArea
         public static string[] res = new string[3];
         static void Main(string[] args)
         {
-            string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            string username = Environment.MachineName;
 
             try
             {
@@ -31,6 +32,7 @@ namespace TestArea
                     Console.WriteLine(res[2]);
                     Console.WriteLine(res[1]);
                     Console.WriteLine(res[0]);
+                    Console.WriteLine(username);
                 }
             }
             catch (Exception ex)
