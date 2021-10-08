@@ -24,19 +24,9 @@ namespace SecuCheck7
 
         public string[] Check()
         {
-            
-            try
-            {
-                RunCheck();
+            RunCheck();
 
-                return Result;
-            }
-            catch (Exception ex)
-            {
-                Result[1] = "ERROR";
-                Result[2] = ex.ToString();
-                return Result;
-            }
+            return Result;
         }
         public string[] Fix()
         {

@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command.cs" />
     <Compile Include="Interface.cs" />
+    <Compile Include="Logging.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="P01_UserAccountPassword.cs" />
     <Compile Include="P02_AccountExpirationDate.cs" />
